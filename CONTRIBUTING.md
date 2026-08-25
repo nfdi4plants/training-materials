@@ -10,14 +10,6 @@ Although most materials are reusable and editable, this repo is primarily meant 
 1. Add a new folder named `<date>_<context>_<title>` (date format: `yyyy-mm-dd`) with your materials to `slide-decks/`
 2. add a `README.md` to describe the event / materials, etc.
 3. List your slides in the root [README.md](./README.md) sorted by latest first
-<!-- 
-## marp (render markdown slides)
-
-Definitely not a must, but it may make reuse more easily.
-
-## Knowledge Base - git submodule
- -->
-
 
 ## File names
 
