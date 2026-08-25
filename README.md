@@ -13,6 +13,7 @@ Material are shared here under [CC BY 4.0 license](https://creativecommons.org/l
 
 Event | Slide decks
 ----|---
+2026-06-22_mibinet-arc-elabFTW-training | [slide-decks/2026-06-22_mibinet-arc-elabFTW-training](slide-decks/2026-06-22_mibinet-arc-elabFTW-training/combined-slides/)
 2025-10-29_IRTG2843-arcify | [slide-decks/2025-10-29_IRTG2843-arcify](slide-decks/2025-10-29_IRTG2843-arcify)
 2025-10-23_denbi-RDM-training | [slide-decks/2025-10-23_denbi-RDM-training](slide-decks/2025-10-23_denbi-RDM-training/slides.pdf)
 2025-09-09_ceplas-arcify | [slide-decks/2025-09-09_ceplas-arcify](slide-decks/2025-09-09_ceplas-arcify/slides.pdf)
@@ -46,27 +47,6 @@ Event | Slide decks
 
 ## Markdown-based slide decks
 
-
-### Knowledge Base git submodule
-
-In order to reuse images from the knowledge base, that repo is added here as a submodule.
-
-```bash
-# git submodule add -b main https://github.com/nfdi4plants/nfdi4plants.knowledgebase/ public/kb (done once for the repo)
-```
-
-On a fresh clone, one needs to init the submodule via
-
-```bash
-git submodule update --init --recursive
-```
-
-To pull the latest commit from the original repo
-
-```bash
-git submodule update --recursive --remote
-```
-
 ### Slidev
 
 [Slidev](http://sli.dev/) is a pretty strong vue.js based framework to build slides from markdown files.
@@ -75,30 +55,7 @@ git submodule update --recursive --remote
 - There's a [vscode extension](https://sli.dev/features/vscode-extension) available
 - during watch or build it checks, that all referenced / reused images or imported bricks actually exist
 
-#### Install slidev
-
-```bash
-## npm init slidev (done once for the repo)
-npm install ## (done once per machine)
-```
-
-#### Watch a slidev slide deck
-
-You can see an example slide deck built with slidev here using the following command. 
-This should open a browser with the presentation, including some presentation controls in the bottom-left corner.
-(Note: this will only work, if above `git submodule` (i.e. the images from knowledge base) are correctly added.)
-
-```bash
-npm run dev -- slide-decks/2025-04-02_fdmnrw_fdm-werkstatt/slides.md
-```
-
-#### Export a slidev slide deck to pdf
-
-You can directly export a slide deck to pdf using slidev's browser controls or use the export command, e.g.
-
-```bash
-npm run export -- slide-decks/2025-04-02_fdmnrw_fdm-werkstatt/slides.md --output slide-decks/2025-04-02_fdmnrw_fdm-werkstatt/slides.pdf
-```
+For slidev-based slide-decks and slide themes check out [EduSlides](https://github.com/EduBricksHub/EduSlides)
 
 ### Marp
 
